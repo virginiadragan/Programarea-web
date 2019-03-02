@@ -1,0 +1,22 @@
+body{
+	background-image: url(../img/backgroung.jpg); 
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+div .thumbnail{
+	background-image: url(../img/bg.jpg);
+	
+}
+div .row{
+
+}
+div .container-fluid{
+	background-image: url(../img/bg.jpg);
+}
+div .addIngredients{
+	height: 200px;
+	width: 200px;
+	background: red;
+	z-index: 10;
+	position: fixed;
+}

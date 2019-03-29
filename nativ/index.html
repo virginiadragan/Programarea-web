@@ -13,6 +13,7 @@
 	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 </head>
 <body>
+		
 	<div class="container">
 		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
@@ -30,418 +31,40 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li class="active">
-		        	<a href="#">Pizza </a></li>
+						<li><a href="#">Pizza </a></li>
 		        <li><a href="#">Salate</a></li> 
 		        <li><a href="#">Sucuri</a></li> 
 		      </ul>     
 		      <ul class="nav navbar-nav navbar-right">
-        		<button type="button" class="btn btn-default btn-lg">
-  					<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Car
-				</button>
-        	  </ul>
+        		
+					</ul>
+				
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-		<div class="row">
-		  <div class="col-sm-6 col-md-4">
-		    <div class="thumbnail">
-		      <img src="img/assorti.jpg" alt="this is a img">
-		      <div class="caption">
-		        <h3>name pizza</h3>
-		        <p>ingredients: ....</p>
-		        <label>Marimea:</label>
-		        <div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadioS">S</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioS" value="65">
-				  
-				  <label class="form-check-label" for="inlineRadioL">L</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioL" value="85">
-				  
-				  <label class="form-check-label" for="inlineRadioXL">XL</label>
-				   <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioXL" value="100">
-				</div>
+		<div  id="emptyCar">
+			<img src="img/car.png">
+			<label for="totalPriceEmpty" class="abc">Total:</label>
+			<span id="totalPriceEmpty">0</span>
+			<button id="makeOrderbtn" type="button" class="btn btn-default1">Comanda</button>
+		</div>
 
-				<label>Forma:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Rotund</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
-				  
-				  <label class="form-check-label" for="inlineRadio2">Oval</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">	  
-				</div>
-				<label>Tipul:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Subtire</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
-				  
-				    <label class="form-check-label" for="inlineRadio2">Gros</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">	  
-				</div>
-				
-		        <p>
-		        	Total price:<span id="totalPrice">0</span>
-		        	<button type="button" class="btn btn-default">Add ingredients</button>
-		        	<button type="button" class="btn btn-danger">Add to car</button>
-		        </p>
-		      </div>
-		    </div>
-		  </div>
-
-		  <div class="col-sm-6 col-md-4">
-		    <div class="thumbnail">
-		      <img src="img/assorti.jpg" alt="this is a img">
-		      <div class="caption">
-		        <h3>name pizza</h3>
-		        <p>ingredients: ....</p>
-		        <label>Marimea:</label>
-		        <div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadioS">S</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioS" value="65">
-				  
-				  <label class="form-check-label" for="inlineRadioL">L</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioL" value="85">
-				  
-				  <label class="form-check-label" for="inlineRadioXL">XL</label>
-				   <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioXL" value="100">
-				</div>
-
-				<label>Forma:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Rotund</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
-				  
-				  <label class="form-check-label" for="inlineRadio2">Oval</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">	  
-				</div>
-				<label>Tipul:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Subtire</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
-				  
-				    <label class="form-check-label" for="inlineRadio2">Gros</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">	  
-				</div>
-				
-		        <p>
-		        	Total price:<span id="totalPrice">0</span>
-		        	<button type="button" class="btn btn-default">Add ingredients</button>
-		        	<button type="button" class="btn btn-danger">Add to car</button>
-		        </p>
-		      </div>
-		    </div>
-		  </div>
-
-		  <div class="col-sm-6 col-md-4">
-		    <div class="thumbnail">
-		      <img src="img/assorti.jpg" alt="this is a img">
-		      <div class="caption">
-		        <h3>name pizza</h3>
-		        <p>ingredients: ....</p>
-		        <label>Marimea:</label>
-		        <div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadioS">S</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioS" value="65">
-				  
-				  <label class="form-check-label" for="inlineRadioL">L</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioL" value="85">
-				  
-				  <label class="form-check-label" for="inlineRadioXL">XL</label>
-				   <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioXL" value="100">
-				</div>
-
-				<label>Forma:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Rotund</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
-				  
-				  <label class="form-check-label" for="inlineRadio2">Oval</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">	  
-				</div>
-				<label>Tipul:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Subtire</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
-				  
-				    <label class="form-check-label" for="inlineRadio2">Gros</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">	  
-				</div>
-				
-		        <p>
-		        	Total price:<span id="totalPrice">0</span>
-		        	<button type="button" class="btn btn-default">Add ingredients</button>
-		        	<button type="button" class="btn btn-danger">Add to car</button>
-		        </p>
-		      </div>
-		    </div>
-		  </div>
-
-		  <div class="col-sm-6 col-md-4">
-		    <div class="thumbnail">
-		      <img src="img/assorti.jpg" alt="this is a img">
-		      <div class="caption">
-		        <h3>name pizza</h3>
-		        <p>ingredients: ....</p>
-		        <label>Marimea:</label>
-		        <div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadioS">S</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioS" value="65">
-				  
-				  <label class="form-check-label" for="inlineRadioL">L</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioL" value="85">
-				  
-				  <label class="form-check-label" for="inlineRadioXL">XL</label>
-				   <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioXL" value="100">
-				</div>
-
-				<label>Forma:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Rotund</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
-				  
-				  <label class="form-check-label" for="inlineRadio2">Oval</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">	  
-				</div>
-				<label>Tipul:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Subtire</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
-				  
-				    <label class="form-check-label" for="inlineRadio2">Gros</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">	  
-				</div>
-				
-		        <p>
-		        	Total price:<span id="totalPrice">0</span>
-		        	<button type="button" class="btn btn-default">Add ingredients</button>
-		        	<button type="button" class="btn btn-danger">Add to car</button>
-		        </p>
-		      </div>
-		    </div>
-		  </div>
-
-		  <div class="col-sm-6 col-md-4">
-		    <div class="thumbnail">
-		      <img src="img/assorti.jpg" alt="this is a img">
-		      <div class="caption">
-		        <h3>name pizza</h3>
-		        <p>ingredients: ....</p>
-		        <label>Marimea:</label>
-		        <div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadioS">S</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioS" value="65">
-				  
-				  <label class="form-check-label" for="inlineRadioL">L</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioL" value="85">
-				  
-				  <label class="form-check-label" for="inlineRadioXL">XL</label>
-				   <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioXL" value="100">
-				</div>
-
-				<label>Forma:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Rotund</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
-				  
-				  <label class="form-check-label" for="inlineRadio2">Oval</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">	  
-				</div>
-				<label>Tipul:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Subtire</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
-				  
-				    <label class="form-check-label" for="inlineRadio2">Gros</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">	  
-				</div>
-				
-		        <p>
-		        	Total price:<span id="totalPrice">0</span>
-		        	<button type="button" class="btn btn-default">Add ingredients</button>
-		        	<button type="button" class="btn btn-danger">Add to car</button>
-		        </p>
-		      </div>
-		    </div>
-		  </div>
-
-		  <div class="col-sm-6 col-md-4">
-		    <div class="thumbnail">
-		      <img src="img/assorti.jpg" alt="this is a img">
-		      <div class="caption">
-		        <h3>name pizza</h3>
-		        <p>ingredients: ....</p>
-		        <label>Marimea:</label>
-		        <div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadioS">S</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioS" value="65">
-				  
-				  <label class="form-check-label" for="inlineRadioL">L</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioL" value="85">
-				  
-				  <label class="form-check-label" for="inlineRadioXL">XL</label>
-				   <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioXL" value="100">
-				</div>
-
-				<label>Forma:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Rotund</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
-				  
-				  <label class="form-check-label" for="inlineRadio2">Oval</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">	  
-				</div>
-				<label>Tipul:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Subtire</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
-				  
-				    <label class="form-check-label" for="inlineRadio2">Gros</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">	  
-				</div>
-				
-		        <p>
-		        	Total price:<span id="totalPrice">0</span>
-		        	<button type="button" class="btn btn-default">Add ingredients</button>
-		        	<button type="button" class="btn btn-danger">Add to car</button>
-		        </p>
-		      </div>
-		    </div>
-		  </div>
-
-		  <div class="col-sm-6 col-md-4">
-		    <div class="thumbnail">
-		      <img src="img/assorti.jpg" alt="this is a img">
-		      <div class="caption">
-		        <h3>name pizza</h3>
-		        <p>ingredients: ....</p>
-		        <label>Marimea:</label>
-		        <div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadioS">S</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioS" value="65">
-				  
-				  <label class="form-check-label" for="inlineRadioL">L</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioL" value="85">
-				  
-				  <label class="form-check-label" for="inlineRadioXL">XL</label>
-				   <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioXL" value="100">
-				</div>
-
-				<label>Forma:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Rotund</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
-				  
-				  <label class="form-check-label" for="inlineRadio2">Oval</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">	  
-				</div>
-				<label>Tipul:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Subtire</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
-				  
-				    <label class="form-check-label" for="inlineRadio2">Gros</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">	  
-				</div>
-				
-		        <p>
-		        	Total price:<span id="totalPrice">0</span>
-		        	<button type="button" class="btn btn-default">Add ingredients</button>
-		        	<button type="button" class="btn btn-danger">Add to car</button>
-		        </p>
-		      </div>
-		    </div>
-		  </div>
-
-		  <div class="col-sm-6 col-md-4">
-		    <div class="thumbnail">
-		      <img src="img/assorti.jpg" alt="this is a img">
-		      <div class="caption">
-		        <h3>name pizza</h3>
-		        <p>ingredients: ....</p>
-		        <label>Marimea:</label>
-		        <div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadioS">S</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioS" value="65">
-				  
-				  <label class="form-check-label" for="inlineRadioL">L</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioL" value="85">
-				  
-				  <label class="form-check-label" for="inlineRadioXL">XL</label>
-				   <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioXL" value="100">
-				</div>
-
-				<label>Forma:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Rotund</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
-				  
-				  <label class="form-check-label" for="inlineRadio2">Oval</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">	  
-				</div>
-				<label>Tipul:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Subtire</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
-				  
-				    <label class="form-check-label" for="inlineRadio2">Gros</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">	  
-				</div>
-				
-		        <p>
-		        	Total price:<span id="totalPrice">0</span>
-		        	<button type="button" class="btn btn-default">Add ingredients</button>
-		        	<button type="button" class="btn btn-danger">Add to car</button> 
-		        </p>
-		      </div>
-		    </div>
-		  </div>
-
-		  <div class="col-sm-6 col-md-4">
-		    <div class="thumbnail">
-		      <img src="img/assorti.jpg" alt="this is a img">
-		      <div class="caption">
-		        <h3>name pizza</h3>
-		        <p>ingredients: ....</p>
-		        <label>Marimea:</label>
-		        <div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadioS">S</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioS" value="65">
-				  
-				  <label class="form-check-label" for="inlineRadioL">L</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioL" value="85">
-				  
-				  <label class="form-check-label" for="inlineRadioXL">XL</label>
-				   <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadioXL" value="100">
-				</div>
-
-				<label>Forma:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Rotund</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1">
-				  
-				  <label class="form-check-label" for="inlineRadio2">Oval</label>
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">	  
-				</div>
-				<label>Tipul:</label>
-				<div class="form-check form-check-inline">
-		        	<label class="form-check-label" for="inlineRadio1">Subtire</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1">
-				  
-				    <label class="form-check-label" for="inlineRadio2">Gros</label>
-				    <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2">	  
-				</div>
-				
-		        <p>
-		        	Total price:<span id="totalPrice">0</span>
-		        	<button type="button" class="btn btn-default">Add ingredients</button>
-		        	<button type="button" class="btn btn-danger">Add to car</button>
-		        </p>
-		      </div>
-		    </div>
-		  </div>
+		<div class="hide" id="fullCar">
+			
+		</div>
+		<div class="addIngredients hide" id="aditional">
+			
 		</div>	
+		<div id="card" class="row">
+			
+		</div>	
+	
 	</div>
+	
+	
 	<script type="text/javascript" src="js/pizza.js"></script>
+	
+	
 	
 </body>
 </html>

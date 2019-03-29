@@ -1,0 +1,130 @@
+{  
+    "interface":[  
+       {  
+          "image":"img/margarita.jpg",
+          "name":"Margarita",
+          "ingredients":[  
+             "ingrediente: sos pomodoro",
+             "cascaval mozzarella",
+             "tomate"
+          ]
+       },
+       {  
+          "image":"img/pitstsa-chetyre-sezona.jpg",
+          "name":"Patru anotimpuri",
+          "ingredients":[  
+             "ingrediente: sos pomodoro",
+             "cascaval mozzarella",
+             "tomate",
+             "ciuperci",
+             "salam",
+             "cascaval dorblu"
+          ]
+       },
+       {  
+          "image":"img/pepperoni.jpg",
+          "name":"Pepperoni",
+          "ingredients":[  
+             "ingrediente: sos pomodoro",
+             "cascaval mozzarella",
+             "salam"
+          ]
+       },
+       {  
+          "image":"img/assorti.jpg",
+          "name":"Asorti",
+          "ingredients":[  
+             "ingrediente: sos pomodoro",
+             "cascaval mozzarella",
+             "salam",
+             "masline",
+             "ardei dulce",
+             "verdeata"
+          ]
+       },
+       {  
+          "image":"img/vegetarianskaya.jpg",
+          "name":"Vegetariana",
+          "ingredients":[  
+             "ingrediente: sos pomodoro",
+             "cascaval mozzarella",
+             "ciuperci",
+             "tomate",
+             "ardei dulce",
+             "verdeata"
+          ]
+       },
+       {  
+          "image":"img/pikante.jpg",
+          "name":"Picanta",
+          "ingredients":[  
+             "ingrediente: sos de mustar",
+             "cascaval mozzarella",
+             "fileu de pui",
+             "cascaval dorblu"
+          ]
+       },
+       {  
+          "image":"img/studencheskaya.jpg",
+          "name":"Studenteasca",
+          "ingredients":[  
+             "ingrediente: sos de busuioc",
+             "cascaval mozzarella",
+             "salam",
+             "tomate",
+             "castraveti",
+             "verdeata"
+          ]
+       },
+       {  
+          "image":"img/klassicheskaya.jpg",
+          "name":"Clasica",
+          "ingredients":[  
+             "ingrediente: sos pomodoro",
+             "cascaval mozzarella",
+             "salam",
+             "sunca",
+             "tomate",
+             "ciuperci"
+          ]
+       },
+       {  
+          "image":"img/dolche.jpg",
+          "name":"Dolche",
+          "ingredients":[  
+             "ingrediente: sos de busuioc",
+             "cascaval mozzarella",
+             "somon afumat",
+             "tomate",
+             "masline",
+             "verdeata"
+          ]
+       }
+    ],
+    "ingredient":[  
+       {  
+          "name":"Cascaval dublu",
+          "price":25
+       },
+       {  
+          "name":"Ciuperci",
+          "price":35
+       },
+       {  
+          "name":"Salam",
+          "price":35
+       },
+       {  
+          "name":"Sunca",
+          "price":30
+       },
+       {  
+          "name":"Masline",
+          "price":20
+       },
+       {  
+          "name":"Ardei dulce",
+          "price":30
+       }
+    ]
+ }

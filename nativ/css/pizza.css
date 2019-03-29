@@ -1,22 +1,105 @@
 body{
 	background-image: url(../img/backgroung.jpg); 
 	background-repeat: no-repeat;
-  background-size: cover;
+    background-size: cover;
 }
-div .thumbnail{
-	background-image: url(../img/bg.jpg);
+/* .container-fluid {
 	
-}
-div .row{
-
+	z-index: 100;
+	width:1138px;
+} */
+div .thumbnail{
+	background-image: url(../img/bg.jpg);	
 }
 div .container-fluid{
 	background-image: url(../img/bg.jpg);
 }
 div .addIngredients{
-	height: 200px;
-	width: 200px;
-	background: red;
-	z-index: 10;
+	background-color:#A9A9A9; 
+	z-index: 1000000;
+	display: block;
 	position: fixed;
+	left: 15%;
+	right: 15%;
+	bottom: 15%;
+	top: 15%;	
+	padding: 5%;
+}
+.addIngredients .additionalIngredients .active .inp{
+	width: 26px;
+	height: 26px;
+	text-align: center;
+	font-size: 15px;
+	background-color:#A9A9A9; 
+	border: 1px solid #A9A9A9; 
+}
+#fullCar1 .active .inp{
+	width: 26px;
+	height: 26px;
+	text-align: center;
+	font-size: 15px;
+	background-color:#A9A9A9; 
+	border: 1px solid #A9A9A9; 
+}
+li{
+	list-style-type: none;
+	font-size: 15px;
+}
+div .name, .price{
+	width: 35%;
+	display: inline-block;
+}
+button .minusAditionalIngredients, .plusAditionalIngredients{
+	background-color:#A9A9A9;
+	border: 1px solid #A9A9A9; 
+	font-size: 20px;
+}
+button .plusAditionalIngredients, .minusAditionalIngredients{
+	background-color:#A9A9A9;
+	border: 1px solid #A9A9A9; 
+	font-size: 27px;
+}
+
+.addIngredients .abc{
+	margin-left: 42%;
+}
+.addIngredients #okBtn{
+	margin-left: 45%;
+}
+#emptyCar{
+	background-color:#A9A9A9; 
+	width: 250px;
+	height: 50px;
+	font-size: 15px;
+	position: absolute;
+	z-index: 1000000;
+	right: 9%;
+	top: 0.2%;
+	
+}
+#fullCar{
+	background-color:#A9A9A9; 
+	width: 250px;
+	height: 50px;
+	font-size: 15px;
+	position: absolute;
+	z-index: 1000000;
+	right: 9%;
+	top: 0.2%;
+}
+#fullCar1{
+	z-index: 10;
+	background-color:#A9A9A9; 
+	width: 250px;
+	height: 70px;
+	font-size: 15px;
+	position: relative;
+	display: block;
+	padding-left: 7px;
+	padding-right: 7px;
+	
+}
+#fullCar1 hr {
+	margin: 0px;
+	margin-top: 0px;
 }
